@@ -1,23 +1,14 @@
 :root {
-  --latar: #fafaf9;
-  --permukaan: #ffffff;
-  --teks: #1c1917;
-  --redup: #57534e;
-  --garis: #e7e5e4;
-  --aksen: #15803d;
-  --di-aksen: #ffffff;
+  --latar: #0c0a09;
+  --permukaan: #1c1917;
+  --teks: #fafaf9;
+  --redup: #a8a29e;
+  --garis: #292524;
+  --aksen: #4ade80;
+  --di-aksen: #052e16;
 }
-@media (prefers-color-scheme: dark) {
-  :root {
-    --latar: #0c0a09;
-    --permukaan: #1c1917;
-    --teks: #fafaf9;
-    --redup: #a8a29e;
-    --garis: #292524;
-    --aksen: #4ade80;
-    --di-aksen: #052e16;
-  }
-}
+
+#adegan { position: fixed; inset: 0; width: 100%; height: 100%; z-index: -1; }
 
 * { box-sizing: border-box; }
 body {
@@ -75,5 +66,14 @@ h3 { margin: 0 0 8px; font-size: 20px; letter-spacing: -.01em; }
 
 .kaki { padding-top: 64px; padding-bottom: 48px; color: var(--redup); font-size: 14px; }
 
-@media (max-width: 600px) { .kepala { padding-top: 56px; } }
-@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+.sampul { min-height: 100svh; display: flex; flex-direction: column; justify-content: center; padding-top: 32px; }
+.sampul > * { max-width: 46%; animation: masuk .6s ease both; }
+@keyframes masuk { from { opacity: 0; transform: translateY(12px); } }
+.kartu { will-change: transform; }
+.kaki { min-height: 45vh; display: flex; align-items: flex-end; }
+
+@media (max-aspect-ratio: 11/10) {
+  .sampul { justify-content: flex-start; padding-top: 64px; }
+  .sampul > * { max-width: none; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
