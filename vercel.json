@@ -1,0 +1,90 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://sekolahku.edufin.app/api/:path*"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/login",
+      "destination": "https://sekolahku.edufin.app/login",
+      "permanent": true
+    },
+    {
+      "source": "/register",
+      "destination": "https://sekolahku.edufin.app/register",
+      "permanent": true
+    },
+    {
+      "source": "/forgot-password",
+      "destination": "https://sekolahku.edufin.app/forgot-password",
+      "permanent": true
+    },
+    {
+      "source": "/reset-password",
+      "destination": "https://sekolahku.edufin.app/reset-password",
+      "permanent": true
+    },
+    {
+      "source": "/protected",
+      "destination": "https://sekolahku.edufin.app/protected",
+      "permanent": true
+    },
+    {
+      "source": "/sekolah-portal-auth",
+      "destination": "https://sekolahku.edufin.app/sekolah-portal-auth",
+      "permanent": true
+    },
+    {
+      "source": "/super-console-auth",
+      "destination": "https://sekolahku.edufin.app/super-console-auth",
+      "permanent": true
+    },
+    {
+      "source": "/database-docs",
+      "destination": "https://sekolahku.edufin.app/database-docs",
+      "permanent": true
+    },
+    {
+      "source": "/wireframes",
+      "destination": "https://sekolahku.edufin.app/wireframes",
+      "permanent": true
+    },
+    {
+      "source": "/student",
+      "destination": "https://sekolahku.edufin.app/student",
+      "permanent": true
+    },
+    {
+      "source": "/school",
+      "destination": "https://sekolahku.edufin.app/school",
+      "permanent": true
+    },
+    {
+      "source": "/donor",
+      "destination": "https://sekolahku.edufin.app/donor",
+      "permanent": true
+    },
+    {
+      "source": "/student/:path*",
+      "destination": "https://sekolahku.edufin.app/student/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/school/:path*",
+      "destination": "https://sekolahku.edufin.app/school/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/donor/:path*",
+      "destination": "https://sekolahku.edufin.app/donor/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/superadmin/:path*",
+      "destination": "https://sekolahku.edufin.app/superadmin/:path*",
+      "permanent": true
+    }
+  ]
+}
